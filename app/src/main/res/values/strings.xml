@@ -1,0 +1,101 @@
+<resources>
+
+    <!--STRINGS GENERAL DE LA APP-->
+    <string name="app_name">Control de empleados</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tuto">Tutorial</string>
+    <string name="logo">InOut Control</string>
+
+
+
+
+    <!--STRINGS DE INICIAR SESIÓN-->
+    <string name="login">Iniciar Sesión</string>
+    <string name="startses">Inicio de Sesión</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="ingres">Ingresar</string>
+    <string name="nousr">¿No tienes usuario?</string>
+    <string name="regusr">¡Regístrate aquí!</string>
+
+
+    <!--STRINGS DE REGISTRARSE-->
+
+    <string name="Regist">Registro de usuario nuevo</string>
+    <string name="tittlereg">¡Registrarte es fácil y rápido!</string>
+    <string name="personalfiles">Datos personales</string>
+    <string name="appaterno">Apellido paterno</string>
+    <string name="amaterno">Apellido materno</string>
+    <string name="nacimiento">Fecha de nacimiento</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="userfiles">Datos de usuario</string>
+    <string name="confirmpass">Confirmar contraseña</string>
+
+    <string name="nombre">Nombre(s)</string>
+
+
+
+    <!--STRINGS DE HOME-->
+    <string name="menu_home">Inicio</string>
+
+
+    <!--STRINGS DE EMPLEADOS-->
+    <string name="menu_empleados">Empleados</string>
+    <string name="puesto">Puesto</string>
+    <string name="fecha_alta">Fecha de alta</string>
+    <string name="fecha_baja">Fecha de baja</string>
+    <string name="administrador">Acceso como administrador</string>
+
+    <!--STRINGS DE HORARIOS-->
+    <string name="menu_horarios">Horarios</string>
+
+
+    <!--STRINGS DE ASIGNAR HORARIOS-->
+    <string name="menu_asignarhorarios">Asignar horarios</string>
+
+
+    <!--STRINGS DE REPORTES-->
+    <string name="menu_reportes">Reportes</string>
+
+
+    <!--STRINGS DE COMUNICACIÓN-->
+    <string name="titlecomunicacion">Comunicación</string>
+
+
+    <!--STRINGS DE TERMINOS Y CONDICIONES-->
+    <string name="menu_terminosycondiciones">Términos y condiciones</string>
+
+
+    <!--STRINGS DE CONTACTO-->
+    <string name="menu_contacto">Contacto</string>
+    <string name="phone">Teléfonos:</string>
+    <string name="addres">Dirección:</string>
+    <string name="myname">I.S.C. JOSÉ CARLOS JOAQUÍN VAZQUEZ</string>
+
+
+    <!--STRINGS DE A CERCA DE...-->
+    <string name="menu_acerca">A cerca de...</string>
+
+
+    <!--AGRADECIMIENTOS DE UNSPLASH-->
+    <string name="thanks">Gracias a Luke Chesser por compartir su trabajo en Unsplash.</string>
+
+    <!-- TODO: Remove or change this placeholder text
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>-->
+
+
+    <string name="home_second">Home Second</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_home_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_gallery_second">Hello HomeSecondFragment. Arg: %1$s</string>
+    <string name="hello_slideshow_second">Hello HomeSecondFragment. Arg: %1$s</string>
+</resources>

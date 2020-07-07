@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.registro.RegistroFragment"
+                android:id="@+id/fragmenreg">
+
+    <RelativeLayout
+            android:background="@color/secundario1"
+            android:id="@+id/lyheadreg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+        <ImageButton
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:background="@color/secundario1"
+                android:tint="@color/primario"
+                android:src="?attr/homeAsUpIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Login"
+                android:id="@+id/btnbacklogin"/>
+
+        <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/head_regs"
+                android:text="@string/Regist"
+                android:textColor="@color/primario"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/titregistrar"
+            android:text="@string/tittlereg"
+            android:textColor="@color/secundario1"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="16sp"
+            android:layout_marginTop="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    <ScrollView
+            android:layout_margin="20dp"
+            android:layout_below="@+id/titregistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:id="@+id/subtit_pers"
+                    android:gravity="start"
+                    android:textColor="@color/terciario2"
+                    android:text="@string/personalfiles"
+                    android:fontFamily="@font/roboto_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+        <LinearLayout
+                android:id="@+id/lynames"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    android:layout_width="120dp"
+                    android:gravity="start"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:counterTextColor="@color/primario2"
+                    app:counterOverflowTextColor="@color/primario3"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/terciario3"
+                        android:hint="@string/appaterno"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    android:layout_width="120dp"
+                    android:gravity="center"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:counterTextColor="@color/primario2"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/terciario3"
+                        android:hint="@string/amaterno"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    android:layout_width="120dp"
+                    android:gravity="end"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:counterTextColor="@color/primario2"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/terciario3"
+                        android:hint="@string/nombre"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/lyaddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    android:layout_width="150dp"
+                    android:gravity="start"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:counterTextColor="@color/primario2"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/terciario3"
+                        android:inputType="date"
+                        android:hint="@string/nacimiento"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="100"
+                    app:counterTextColor="@color/primario2"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/terciario3"
+                        android:hint="@string/direccion"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

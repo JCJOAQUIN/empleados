@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+
+    <!--COLORES OFICIALES DE LA APP-->
+    <color name="ground">#000000</color>
+    <color name="primario">#ffffff</color>
+    <color name="primario1">#424242</color>
+    <color name="primario2">#9E9E9E</color>
+    <color name="primario3">#EEEEEE</color>
+    <color name="secundario">#0D47A1</color>
+    <color name="secundario1">#1976D2</color>
+    <color name="secundario2">#42A5F5</color>
+    <color name="secundario3">#90CAF9</color>
+    <color name="terciario">#E65100</color>
+    <color name="terciario1">#FF6D00</color>
+    <color name="terciario2">#FF9100</color>
+    <color name="terciario3">#FFAB40</color>
+</resources>
+

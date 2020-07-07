@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mobile_navigation"
+            app:startDestination="@+id/nav_home">
+
+    <fragment
+            android:id="@+id/nav_home"
+            android:name="com.example.empleados.ui.home.HomeFragment"
+            android:label="@string/menu_home"
+            tools:layout="@layout/fragment_home">
+
+        <action
+                android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+                app:destination="@id/nav_home_second"/>
+        <action android:id="@+id/action_nav_home_to_asignarHorarioFragment"
+                app:destination="@id/asignarHorarioFragment"/>
+        <action android:id="@+id/action_nav_home_to_empleadosFragment" app:destination="@id/empleadosFragment"/>
+        <action android:id="@+id/action_nav_home_to_horariosFragment" app:destination="@id/horariosFragment"/>
+        <action android:id="@+id/action_nav_home_to_reportesFragment" app:destination="@id/reportesFragment"/>
+        <action android:id="@+id/action_nav_home_to_contactoFragment" app:destination="@id/contactoFragment"/>
+        <action android:id="@+id/action_nav_home_to_acercadeFragment" app:destination="@id/acercadeFragment"/>
+        <action android:id="@+id/action_nav_home_to_terminosYCondicionesFragment"
+                app:destination="@id/terminosYCondicionesFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/nav_home_second"
+            android:name="com.example.empleados.ui.home.HomeSecondFragment"
+            android:label="@string/home_second"
+            tools:layout="@layout/fragment_home_second">
+        <action
+                android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+                app:destination="@id/nav_home"/>
+
+        <argument
+                android:name="myArg"
+                app:argType="string"/>
+    </fragment>
+
+    <fragment android:id="@+id/asignarHorarioFragment"
+              android:name="com.example.empleados.ui.asginarhorario.AsignarHorarioFragment"
+              android:label="@string/menu_asignarhorarios"
+              tools:layout="@layout/fragment_asignar_horario">
+        <action android:id="@+id/action_asignarHorarioFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+
+    <fragment android:id="@+id/empleadosFragment"
+              android:name="com.example.empleados.ui.empleados.EmpleadosFragment"
+              android:label="@string/menu_empleados"
+              tools:layout="@layout/fragment_empleados">
+        <action android:id="@+id/action_empleadosFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+
+    <fragment android:id="@+id/reportesFragment"
+              android:name="com.example.empleados.ui.reportes.ReportesFragment"
+              android:label="@string/menu_reportes"
+              tools:layout="@layout/fragment_reportes">
+        <action android:id="@+id/action_reportesFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+
+    <fragment android:id="@+id/contactoFragment"
+              android:name="com.example.empleados.ui.contacto.ContactoFragment"
+              android:label="@string/menu_contacto"
+              tools:layout="@layout/fragment_contacto">
+        <action android:id="@+id/action_contactoFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+
+    <fragment android:id="@+id/acercadeFragment"
+              android:name="com.example.empleados.ui.acercade.AcercadeFragment"
+              android:label="@string/menu_acerca"
+              tools:layout="@layout/fragment_acercade">
+        <action android:id="@+id/action_acercadeFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+
+    <fragment android:id="@+id/horariosFragment"
+              android:name="com.example.empleados.ui.horarios.HorariosFragment"
+              android:label="@string/menu_horarios"
+              tools:layout="@layout/fragment_horarios">
+        <action android:id="@+id/action_horariosFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+
+    <fragment android:id="@+id/terminosYCondicionesFragment"
+              android:name="com.example.empleados.ui.terminosycondiciones.TerminosYCondicionesFragment"
+              android:label="@string/menu_terminosycondiciones"
+              tools:layout="@layout/fragment_terminos_y_condiciones">
+        <action android:id="@+id/action_terminosYCondicionesFragment_to_nav_home"
+                app:destination="@id/nav_home"/>
+    </fragment>
+</navigation>
