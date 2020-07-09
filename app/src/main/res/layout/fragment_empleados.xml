@@ -24,14 +24,14 @@
             android:layout_margin="20dp"
             android:layout_below="@+id/titregistrar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="400dp">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
             <TextView
                     android:id="@+id/subtit_pers"
-                    android:gravity="start"
+                    android:layout_marginBottom="10dp"
                     android:textColor="@color/terciario2"
                     android:text="@string/personalfiles"
                     android:fontFamily="@font/roboto_black"
@@ -48,38 +48,41 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:layout_width="120dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:gravity="start"
                         android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/terciario3"
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
                             android:hint="@string/appaterno"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:layout_width="120dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/terciario3"
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
                             android:hint="@string/amaterno"/>
                 </com.google.android.material.textfield.TextInputLayout>
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:layout_width="120dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:gravity="end"
                         android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/terciario3"
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
                             android:hint="@string/nombre"/>
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
@@ -93,26 +96,28 @@
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
                         android:gravity="start"
-                        android:layout_width="150dp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/terciario3"
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
                             android:inputType="date"
                             android:hint="@string/nacimiento"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="match_parent">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/terciario3"
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
                             android:inputType="phone"
                             android:hint="@string/phone"/>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -130,17 +135,17 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:textColor="@color/terciario3"
+                        android:layout_height="40dp"
+                        style="@style/TextInputLayoutWithPrimaryColorRegister"
                         android:hint="@string/direccion"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                     android:id="@+id/subtit_usr"
-                    android:gravity="start"
                     android:textColor="@color/terciario2"
                     android:text="@string/userfiles"
                     android:fontFamily="@font/roboto_black"
+                    android:layout_marginBottom="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -154,38 +159,58 @@
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
                         app:counterEnabled="true"
                         app:counterMaxLength="15"
-                        android:gravity="start"
                         app:counterTextColor="@color/primario1"
-                        android:layout_width="180dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textColor="@color/terciario3"
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
                             android:hint="@string/user"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        app:counterEnabled="true"
-                        app:counterMaxLength="20"
-                        app:passwordToggleEnabled="true"
-                        app:passwordToggleTint="@color/primario2"
                         android:gravity="end"
-                        app:counterTextColor="@color/primario1"
-                        android:layout_width="180dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:inputType="textPassword"
-                            android:textColor="@color/terciario3"
-                            android:hint="@string/pass"/>
+                            android:layout_height="40dp"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
+                            android:hint="@string/puesto"/>
                 </com.google.android.material.textfield.TextInputLayout>
 
+
             </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/lypw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/primario2"
+                    app:counterTextColor="@color/primario1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="textPassword"
+                        style="@style/TextInputLayoutWithPrimaryColorRegister"
+                        android:hint="@string/pass"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                     android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
@@ -193,18 +218,69 @@
                     app:counterMaxLength="20"
                     app:passwordToggleEnabled="true"
                     app:passwordToggleTint="@color/primario2"
-                    android:gravity="end"
                     app:counterTextColor="@color/primario1"
-                    android:layout_width="180dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content">
 
                 <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="40dp"
                         android:inputType="textPassword"
-                        android:textColor="@color/terciario3"
+                        style="@style/TextInputLayoutWithPrimaryColorRegister"
                         android:hint="@string/confirmpass"/>
             </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/lyhl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                        android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                        android:gravity="start"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="date"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
+                            android:hint="@string/fecha_alta"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                        android:gravity="end"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="date"
+                            style="@style/TextInputLayoutWithPrimaryColorRegister"
+                            android:hint="@string/fecha_baja"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </LinearLayout>
+            <CheckBox
+                    android:layout_marginTop="25dp"
+                    android:text="@string/administrador"
+                    android:layout_width="300dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/secundario2"
+                    android:theme="@style/check_style"
+                    android:layout_height="wrap_content" android:id="@+id/radioButton"/>
         </LinearLayout>
 
 
@@ -223,4 +299,5 @@
             android:layout_height="wrap_content"
             android:onClick="Start"
             android:id="@+id/button"/>
+
 </RelativeLayout>

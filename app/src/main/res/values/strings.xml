@@ -45,7 +45,7 @@
     <string name="puesto">Puesto</string>
     <string name="fecha_alta">Fecha de alta</string>
     <string name="fecha_baja">Fecha de baja</string>
-    <string name="administrador">Acceso como administrador</string>
+    <string name="administrador">Dar privilegios administrativos.</string>
 
     <!--STRINGS DE HORARIOS-->
     <string name="menu_horarios">Horarios</string>
