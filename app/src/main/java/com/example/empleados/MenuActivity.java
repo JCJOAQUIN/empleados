@@ -1,8 +1,10 @@
 package com.example.empleados;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -59,4 +61,11 @@ public class MenuActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    public void Start(View view)
+    {
+        Intent start=new Intent(this, MainActivity.class);
+        startActivity(start);
+    }
+
 }

@@ -5,7 +5,7 @@
     <string name="title_activity_menu">MenuActivity</string>
     <string name="tuto">Tutorial</string>
     <string name="logo">InOut Control</string>
-
+    <string name="backinises">Salir</string>
 
 
 
@@ -26,15 +26,13 @@
     <string name="personalfiles">Datos personales</string>
     <string name="appaterno">Apellido paterno</string>
     <string name="amaterno">Apellido materno</string>
+    <string name="nombre">Nombre(s)</string>
     <string name="nacimiento">Fecha de nacimiento</string>
     <string name="direccion">Dirección</string>
     <string name="telefono">Teléfono</string>
     <string name="userfiles">Datos de usuario</string>
     <string name="confirmpass">Confirmar contraseña</string>
-
-    <string name="nombre">Nombre(s)</string>
-
-
+    <string name="btnreg">Registrarse</string>
 
     <!--STRINGS DE HOME-->
     <string name="menu_home">Inicio</string>
@@ -42,6 +40,8 @@
 
     <!--STRINGS DE EMPLEADOS-->
     <string name="menu_empleados">Empleados</string>
+    <string name="tit_empl">Control de empleados</string>
+    <string name="admin_control">Administración del personal</string>
     <string name="puesto">Puesto</string>
     <string name="fecha_alta">Fecha de alta</string>
     <string name="fecha_baja">Fecha de baja</string>

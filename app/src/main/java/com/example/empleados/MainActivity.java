@@ -45,6 +45,8 @@ public class MainActivity extends AppCompatActivity implements LoginFragment.onF
         transaction.commit();
     }
 
+
+
     public void Menu(View view)
     {
         Intent menu=new Intent(this, MenuActivity.class);

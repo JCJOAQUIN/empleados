@@ -21,11 +21,11 @@ public class EmpleadosFragment extends Fragment {
         empleadosViewModel =
                 ViewModelProviders.of(this).get(EmpleadosViewModel.class);
         View root = inflater.inflate(R.layout.fragment_empleados, container, false);
-        final TextView textView = root.findViewById(R.id.text_gallery);
+       // final TextView textView = root.findViewById(R.id.text_gallery);
         empleadosViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+            //    textView.setText(s);
             }
         });
         return root;
