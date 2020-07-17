@@ -18,13 +18,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-
+    <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/lyspinner"
+            android:layout_below="@id/titregistrar"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_option"
+                android:layout_weight="1"/>
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_empleado"
+                android:layout_weight="1"/>
+    </LinearLayout>
 
     <ScrollView
+            android:id="@+id/scrolldata"
             android:layout_margin="20dp"
-            android:layout_below="@+id/titregistrar"
+            android:layout_below="@+id/lyspinner"
             android:layout_width="match_parent"
-            android:layout_height="400dp">
+            android:layout_height="360dp">
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
@@ -40,7 +59,6 @@
 
             <LinearLayout
                     android:id="@+id/lynames"
-                    android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -173,7 +191,6 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:gravity="end"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content">
@@ -241,7 +258,6 @@
                     android:orientation="horizontal">
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:gravity="start"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content">
@@ -256,7 +272,6 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                         android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
-                        android:gravity="end"
                         android:layout_width="0dp"
                         android:layout_weight="1"
                         android:layout_height="wrap_content">
@@ -272,32 +287,84 @@
 
 
             </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:theme="@style/TextInputLayoutWithPrimaryColorRegister"
+                    android:gravity="start"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        style="@style/TextInputLayoutWithPrimaryColorRegister"
+                        android:hint="@string/clave_empleado"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
             <CheckBox
-                    android:layout_marginTop="25dp"
-                    android:text="@string/administrador"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/auto_claveempl"
                     android:layout_width="300dp"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:fontFamily="@font/roboto_medium"
                     android:textColor="@color/secundario2"
                     android:theme="@style/check_style"
-                    android:layout_height="wrap_content" android:id="@+id/radioButton"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checclave"/>
+            <CheckBox
+                    android:layout_marginTop="15dp"
+                    android:text="@string/administrador"
+                    android:layout_width="300dp"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/secundario2"
+                    android:theme="@style/check_style"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checadmin"/>
+
         </LinearLayout>
 
 
     </ScrollView>
-    <Button
-            android:background="@drawable/boton_rounded"
+
+
+
+
+
+    <LinearLayout
+            android:id="@+id/lybtn2"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
-            android:text="@string/btnreg"
-            android:textColor="@color/primario"
-            android:textSize="18sp"
-            android:fontFamily="@font/roboto_bold"
-            android:padding="10dp"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:onClick="Start"
-            android:id="@+id/button"/>
+            android:layout_width="match_parent"
+            android:layout_margin="30dp"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:background="@drawable/boton_rounded"
+                android:layout_marginBottom="30dp"
+                android:text="@string/btnconfir"
+                android:textColor="@color/primario"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnconfirm"/>
+        <Button
+                android:background="@drawable/boton_rounded"
+                android:layout_marginBottom="30dp"
+                android:text="@string/btncancel"
+                android:textColor="@color/primario"
+                android:textSize="14sp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/roboto_bold"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btndelete"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
